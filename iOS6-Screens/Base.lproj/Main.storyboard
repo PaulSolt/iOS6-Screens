@@ -219,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5O6-FF-OZz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2065" y="-1003"/>
+            <point key="canvasLocation" x="2063.768115942029" y="-1003.125"/>
         </scene>
         <!--Yellow-->
         <scene sceneID="GAG-ck-TXN">
@@ -235,7 +235,7 @@
                         <rightBarButtonItems>
                             <barButtonItem title="Repeat" id="OTo-GJ-mGl">
                                 <connections>
-                                    <segue destination="U8p-L1-VaW" kind="show" id="VvB-3M-arr"/>
+                                    <segue destination="U8p-L1-VaW" kind="show" id="cOR-05-xnv"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Done" id="gIz-Dr-V0f">
@@ -253,6 +253,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VvB-3M-arr"/>
+        <segue reference="yvf-sq-Xh1"/>
+        <segue reference="cOR-05-xnv"/>
     </inferredMetricsTieBreakers>
 </document>
