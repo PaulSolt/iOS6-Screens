@@ -124,7 +124,13 @@
                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="DEi-ET-6ct"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Orange" id="rNj-u7-cJF"/>
+                    <navigationItem key="navigationItem" title="Orange" id="rNj-u7-cJF">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="07P-W2-lAj">
+                            <connections>
+                                <action selector="done:" destination="Kob-rZ-XBy" id="v9r-Xd-ca8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fq-6h-7UF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

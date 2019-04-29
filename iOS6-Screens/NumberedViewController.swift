@@ -22,7 +22,6 @@ class NumberedViewController: UIViewController {
         label.text = "1"
         label.sizeToFit()
         label.center = view.center // Reposition after a new size
-        
         view.addSubview(label)
         
     }
@@ -37,6 +36,11 @@ class NumberedViewController: UIViewController {
             label.center = view.center
         }
     }
+    
+    @IBAction func done(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
     
     let label = UILabel()  // zero sized label
 }
