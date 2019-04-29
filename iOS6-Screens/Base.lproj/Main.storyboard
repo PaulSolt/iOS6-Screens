@@ -51,7 +51,7 @@
         <!--Red-->
         <scene sceneID="jGI-PS-iPU">
             <objects>
-                <viewController id="U8p-L1-VaW" customClass="NumberedViewController" customModule="iOS6_Screens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="U8p-L1-VaW" customClass="RedViewController" customModule="iOS6_Screens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AZv-ba-z4S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,16 +81,23 @@
                         <viewLayoutGuide key="safeArea" id="za4-sy-78c"/>
                     </view>
                     <navigationItem key="navigationItem" title="Green" id="scP-eb-sMX">
-                        <barButtonItem key="rightBarButtonItem" title="Purple" id="ZnU-if-nKm">
-                            <connections>
-                                <segue destination="jYP-gL-60P" kind="show" id="SYa-FD-47J"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Purple" id="ZnU-if-nKm">
+                                <connections>
+                                    <segue destination="jYP-gL-60P" kind="show" id="SYa-FD-47J"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Blue" id="gfC-sC-pmo">
+                                <connections>
+                                    <segue destination="ZWC-VU-5Sc" kind="show" id="XBH-Nm-5mb"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8i4-7x-Mmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2052" y="-308"/>
+            <point key="canvasLocation" x="2087" y="-279"/>
         </scene>
         <!--Purple-->
         <scene sceneID="aGR-7w-m0u">
@@ -192,5 +199,60 @@
             </objects>
             <point key="canvasLocation" x="389.85507246376812" y="-315.40178571428572"/>
         </scene>
+        <!--Blue-->
+        <scene sceneID="zmL-Jy-hyY">
+            <objects>
+                <viewController id="ZWC-VU-5Sc" customClass="NumberedViewController" customModule="iOS6_Screens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gI9-wg-MZZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="2tG-S0-KBk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Blue" id="rAN-aw-PrL">
+                        <barButtonItem key="rightBarButtonItem" title="Yellow" id="IiC-LI-nCp">
+                            <connections>
+                                <segue destination="26p-ww-rR6" kind="show" id="RsD-HQ-bAg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5O6-FF-OZz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2065" y="-1003"/>
+        </scene>
+        <!--Yellow-->
+        <scene sceneID="GAG-ck-TXN">
+            <objects>
+                <viewController id="26p-ww-rR6" customClass="NumberedViewController" customModule="iOS6_Screens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZFA-rc-ML6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ecH-cz-zm8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Yellow" id="SwW-Qs-GoY">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Repeat" id="OTo-GJ-mGl">
+                                <connections>
+                                    <segue destination="U8p-L1-VaW" kind="show" id="VvB-3M-arr"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Done" id="gIz-Dr-V0f">
+                                <connections>
+                                    <segue destination="KdL-wL-noO" kind="unwind" unwindAction="unwindToRed:" id="RpU-Uf-4nT"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="atd-lp-bxB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="KdL-wL-noO" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2800" y="-1003"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="VvB-3M-arr"/>
+    </inferredMetricsTieBreakers>
 </document>

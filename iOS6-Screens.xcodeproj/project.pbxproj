@@ -13,6 +13,7 @@
 		BD40A6AC22775B0900EB0F35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD40A6AA22775B0900EB0F35 /* LaunchScreen.storyboard */; };
 		BD40A6B422775BA200EB0F35 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BD40A6B322775BA200EB0F35 /* README.md */; };
 		BD40A6B622776CDF00EB0F35 /* NumberedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD40A6B522776CDF00EB0F35 /* NumberedViewController.swift */; };
+		BD40A6B8227772C000EB0F35 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD40A6B7227772C000EB0F35 /* RedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BD40A6AD22775B0900EB0F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD40A6B322775BA200EB0F35 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BD40A6B522776CDF00EB0F35 /* NumberedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberedViewController.swift; sourceTree = "<group>"; };
+		BD40A6B7227772C000EB0F35 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				BD40A6A122775B0800EB0F35 /* AppDelegate.swift */,
 				BD40A6A522775B0800EB0F35 /* Main.storyboard */,
 				BD40A6B522776CDF00EB0F35 /* NumberedViewController.swift */,
+				BD40A6B7227772C000EB0F35 /* RedViewController.swift */,
 				BD40A6A822775B0900EB0F35 /* Assets.xcassets */,
 				BD40A6AA22775B0900EB0F35 /* LaunchScreen.storyboard */,
 				BD40A6AD22775B0900EB0F35 /* Info.plist */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD40A6B622776CDF00EB0F35 /* NumberedViewController.swift in Sources */,
+				BD40A6B8227772C000EB0F35 /* RedViewController.swift in Sources */,
 				BD40A6A222775B0800EB0F35 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
